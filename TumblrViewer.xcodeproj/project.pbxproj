@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		532C69F421EFF2110099DF3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C69F321EFF2110099DF3D /* AppDelegate.swift */; };
-		532C69F621EFF2110099DF3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C69F521EFF2110099DF3D /* ViewController.swift */; };
 		532C69F921EFF2110099DF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532C69F721EFF2110099DF3D /* Main.storyboard */; };
 		532C69FB21EFF2150099DF3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532C69FA21EFF2150099DF3D /* Assets.xcassets */; };
 		532C69FE21EFF2150099DF3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532C69FC21EFF2150099DF3D /* LaunchScreen.storyboard */; };
 		532C6A0921EFF2160099DF3D /* TumblrViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C6A0821EFF2160099DF3D /* TumblrViewerTests.swift */; };
 		532C6A1421EFF2160099DF3D /* TumblrViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C6A1321EFF2160099DF3D /* TumblrViewerUITests.swift */; };
+		532C6A2421EFF2FA0099DF3D /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C6A2321EFF2FA0099DF3D /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		532C69F021EFF2110099DF3D /* TumblrViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		532C69F321EFF2110099DF3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		532C69F521EFF2110099DF3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		532C69F821EFF2110099DF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		532C69FA21EFF2150099DF3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		532C69FD21EFF2150099DF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		532C6A0F21EFF2160099DF3D /* TumblrViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		532C6A1321EFF2160099DF3D /* TumblrViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrViewerUITests.swift; sourceTree = "<group>"; };
 		532C6A1521EFF2160099DF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532C6A2321EFF2FA0099DF3D /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = ../PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		532C69F221EFF2110099DF3D /* TumblrViewer */ = {
 			isa = PBXGroup;
 			children = (
+				532C6A2321EFF2FA0099DF3D /* PhotosViewController.swift */,
 				532C69F321EFF2110099DF3D /* AppDelegate.swift */,
-				532C69F521EFF2110099DF3D /* ViewController.swift */,
 				532C69F721EFF2110099DF3D /* Main.storyboard */,
 				532C69FA21EFF2150099DF3D /* Assets.xcassets */,
 				532C69FC21EFF2150099DF3D /* LaunchScreen.storyboard */,
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532C69F621EFF2110099DF3D /* ViewController.swift in Sources */,
 				532C69F421EFF2110099DF3D /* AppDelegate.swift in Sources */,
+				532C6A2421EFF2FA0099DF3D /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
