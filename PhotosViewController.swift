@@ -8,11 +8,12 @@
 
 import UIKit
 
-class PhotosViewController: UIViewController {
+class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var posts: [[String: Any]] = []
 
-
+    @IBOutlet weak var UITable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,13 +27,14 @@ class PhotosViewController: UIViewController {
                 print(error.localizedDescription)
             } else if let data = data,
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                print(dataDictionary)
                 
                 // TODO: Get the posts and store in posts property
                 // Get the dictionary from the response key
                 let responseDictionary = dataDictionary["response"] as! [String: Any]
+                
                 // Store the returned array of dictionaries in our posts property
                 self.posts = responseDictionary["posts"] as! [[String: Any]]
+                print(self.posts.count)
                 
                 // TODO: Reload the table view
             }
