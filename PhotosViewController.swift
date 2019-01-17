@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -60,6 +61,20 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
         if let photos = post["photos"] as? [[String: Any]] {
             print(photos)
+            let photo = photos[0]
+            let originalSize = photo["original_size"] as! [String: Any]
+            // 3.
+            let urlString = originalSize["url"] as! String
+            // 4.
+            let url = URL(string: urlString)
+            
+            cell.PostImage.af_setImage(withURL: url!)
+            cell.PostImage.contentMode = .scaleAspectFit
+            cell.PostImage.clipsToBounds = true
+            cell.PostImage.layer.masksToBounds = true
+
+
+
         }
         
         // Configure YourCustomCell using the outlets that you've defined.

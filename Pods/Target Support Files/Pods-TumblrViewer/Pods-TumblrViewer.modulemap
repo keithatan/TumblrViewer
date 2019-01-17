@@ -1,0 +1,6 @@
+framework module Pods_TumblrViewer {
+  umbrella header "Pods-TumblrViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}

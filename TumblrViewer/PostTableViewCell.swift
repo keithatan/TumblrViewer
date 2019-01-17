@@ -8,12 +8,14 @@
 
 import UIKit
 
+
 class PostTableViewCell: UITableViewCell {
 
     @IBOutlet weak var PostImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
