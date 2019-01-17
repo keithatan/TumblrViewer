@@ -14,6 +14,7 @@
 		532C6A0921EFF2160099DF3D /* TumblrViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C6A0821EFF2160099DF3D /* TumblrViewerTests.swift */; };
 		532C6A1421EFF2160099DF3D /* TumblrViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C6A1321EFF2160099DF3D /* TumblrViewerUITests.swift */; };
 		532C6A2421EFF2FA0099DF3D /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C6A2321EFF2FA0099DF3D /* PhotosViewController.swift */; };
+		532C6A2621EFF9350099DF3D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C6A2521EFF9350099DF3D /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		532C6A1321EFF2160099DF3D /* TumblrViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrViewerUITests.swift; sourceTree = "<group>"; };
 		532C6A1521EFF2160099DF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532C6A2321EFF2FA0099DF3D /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = ../PhotosViewController.swift; sourceTree = "<group>"; };
+		532C6A2521EFF9350099DF3D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				532C6A2321EFF2FA0099DF3D /* PhotosViewController.swift */,
 				532C69F321EFF2110099DF3D /* AppDelegate.swift */,
 				532C69F721EFF2110099DF3D /* Main.storyboard */,
+				532C6A2521EFF9350099DF3D /* PostTableViewCell.swift */,
 				532C69FA21EFF2150099DF3D /* Assets.xcassets */,
 				532C69FC21EFF2150099DF3D /* LaunchScreen.storyboard */,
 				532C69FF21EFF2150099DF3D /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				532C69F421EFF2110099DF3D /* AppDelegate.swift in Sources */,
 				532C6A2421EFF2FA0099DF3D /* PhotosViewController.swift in Sources */,
+				532C6A2621EFF9350099DF3D /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

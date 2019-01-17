@@ -10,12 +10,16 @@ import UIKit
 
 class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
     var posts: [[String: Any]] = []
 
     @IBOutlet weak var UITable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UITable.delegate = self
+        UITable.dataSource = self
 
         // Do any additional setup after loading the view.
         
@@ -36,10 +40,31 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                 self.posts = responseDictionary["posts"] as! [[String: Any]]
                 print(self.posts.count)
                 
+                self.UITable.reloadData();
+                
                 // TODO: Reload the table view
             }
         }
         task.resume()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
+        
+        let post = posts[indexPath.row]
+        
+        if let photos = post["photos"] as? [[String: Any]] {
+            print(photos)
+        }
+        
+        // Configure YourCustomCell using the outlets that you've defined.
+        
+        return cell
     }
     
 
